@@ -5,5 +5,5 @@ DOMAIN-SUFFIX,mikanani.me
 DOMAIN-KEYWORD,javdb
 DOMAIN-SUFFIX,jdbstatic.com
 
-DOMAIN-SUFFIX,themoviedb.org
-DOMAIN-SUFFIX,tmdb.org
+DOMAIN-KEYWORD,themoviedb
+DOMAIN-KEYWORD,tmdb

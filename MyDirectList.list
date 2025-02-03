@@ -2,5 +2,4 @@ DOMAIN-KEYWORD,klei
 DOMAIN-KEYWORD,quickconnect
 DOMAIN-KEYWORD,synology
 ;DOMAIN-SUFFIX,dyndns.org
-
-
+DOMAIN-SUFFIX,letsencrypt.org

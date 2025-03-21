@@ -4,6 +4,7 @@ DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,jellyfin.org
 DOMAIN-SUFFIX,greasyfork.org
+DOMAIN-SUFFIX,ipify.org
 
 DOMAIN-KEYWORD,javdb
 DOMAIN-KEYWORD,btsow

@@ -2,18 +2,20 @@ DOMAIN-SUFFIX,llgjc1.com
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,docker.io
+DOMAIN-KEYWORD,themoviedb
+DOMAIN-KEYWORD,tmdb
 DOMAIN-SUFFIX,jellyfin.org
 DOMAIN-SUFFIX,greasyfork.org
-DOMAIN-SUFFIX,ipify.org
 
+;成人网站相关
 DOMAIN-KEYWORD,javdb
 DOMAIN-KEYWORD,btsow
 DOMAIN-KEYWORD,avsox
 DOMAIN-SUFFIX,jdbstatic.com
-DOMAIN-SUFFIX,2048.com
 DOMAIN-SUFFIX,2048.cc
 DOMAIN-SUFFIX,iqq2.xyz
 DOMAIN-SUFFIX,madou.tv
+DOMAIN-SUFFIX,avno1.club
 
-DOMAIN-KEYWORD,themoviedb
-DOMAIN-KEYWORD,tmdb
+;不明
+DOMAIN-SUFFIX,ipify.org

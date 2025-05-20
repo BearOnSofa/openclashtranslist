@@ -6,6 +6,7 @@ DOMAIN-KEYWORD,themoviedb
 DOMAIN-KEYWORD,tmdb
 DOMAIN-SUFFIX,jellyfin.org
 DOMAIN-SUFFIX,greasyfork.org
+DOMAIN-SUFFIX,shadowsocks.au
 
 ;成人网站相关
 DOMAIN-KEYWORD,javdb

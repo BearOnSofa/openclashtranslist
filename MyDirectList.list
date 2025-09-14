@@ -3,5 +3,6 @@ DOMAIN-KEYWORD,quickconnect
 DOMAIN-KEYWORD,synology
 ;DOMAIN-SUFFIX,dyndns.org
 DOMAIN-SUFFIX,letsencrypt.org
+DOMAIN-KEYWORD,lonelyisland
 DOMAIN-SUFFIX,bearonsofa.online
 

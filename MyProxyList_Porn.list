@@ -11,3 +11,6 @@ DOMAIN-SUFFIX,fc2ppvdb.com
 DOMAIN-SUFFIX,fc2.com
 DOMAIN-SUFFIX,alicesw.org
 DOMAIN-SUFFIX,missav.ai
+
+;图床
+DOMAIN-SUFFIX,chunwood.com

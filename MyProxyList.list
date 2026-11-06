@@ -3,8 +3,8 @@ DOMAIN-SUFFIX,llg01.com
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,docker.io
-DOMAIN-KEYWORD,themoviedb
-DOMAIN-KEYWORD,tmdb
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
 DOMAIN-SUFFIX,jellyfin.org
 DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,shadowsocks.au
@@ -12,7 +12,5 @@ DOMAIN-SUFFIX,steamxo.com
 DOMAIN-SUFFIX,accounts.klei.com
 DOMAIN-SUFFIX,yuntong.one
 DOMAIN-SUFFIX,cilixiong.com
-
-DOMAIN-SUFFIX,wcc.best
 
 DOMAIN-SUFFIX,ofox.ai

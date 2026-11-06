@@ -51,3 +51,126 @@ DOMAIN-SUFFIX,jdcdn.com
 DOMAIN-SUFFIX,qianxun.com
 DOMAIN-SUFFIX,jdgslb.com
 DOMAIN-SUFFIX,jdgslb.net
+
+# ============================================================
+# MyDirectList_CN.list —— 国内常用平台直连列表（保险版）
+# 格式：Clash classical（每行 TYPE,payload）
+# 接入：rule-provider  behavior=classical  format=text
+#
+# ⚠️ 先说清楚：你当前配置最后一条是 MATCH,DIRECT，
+#    未匹配流量本来就直连，所以这份列表在现在的规则下几乎不生效。
+#    它真正的价值在两个场景：
+#      1) 你哪天把 MATCH,DIRECT 改成 MATCH,自动选择 —— 这时它立刻变成必需
+#      2) 抢在代理规则前面，兜住被代理列表误伤的国内 CDN/接口域名
+#    如果你确定永远保持 MATCH,DIRECT，这份可以不用建，不影响使用。
+#
+# 注释用 # ，不要用 ;
+# ============================================================
+
+# ---------- 支付 / 银行（手机代理后最容易出问题的一类）----------
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,mybank.cn
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,unionpay.com
+DOMAIN-SUFFIX,95516.com
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,ccb.com
+DOMAIN-SUFFIX,boc.cn
+DOMAIN-SUFFIX,abchina.com
+DOMAIN-SUFFIX,cmbchina.com
+DOMAIN-SUFFIX,psbc.com
+DOMAIN-SUFFIX,bankcomm.com
+DOMAIN-SUFFIX,spdb.com.cn
+DOMAIN-SUFFIX,pingan.com
+
+# ---------- 电商 ----------
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,alibaba.com
+DOMAIN-SUFFIX,1688.com
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN-SUFFIX,yangkeduo.com
+DOMAIN-SUFFIX,pddpic.com
+DOMAIN-SUFFIX,xiaohongshu.com
+DOMAIN-SUFFIX,xhscdn.com
+DOMAIN-SUFFIX,vip.com
+DOMAIN-SUFFIX,suning.com
+DOMAIN-SUFFIX,smzdm.com
+DOMAIN-SUFFIX,dewu.com
+
+# ---------- 社交 / 内容 / 短视频 ----------
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibo.cn
+DOMAIN-SUFFIX,sinaimg.cn
+DOMAIN-SUFFIX,sina.com.cn
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,kuaishou.com
+DOMAIN-SUFFIX,gifshow.com
+DOMAIN-SUFFIX,kwaicdn.com
+DOMAIN-SUFFIX,yximgs.com
+
+# ---------- 长视频 / 音乐 ----------
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,qiyi.com
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,kugou.com
+DOMAIN-SUFFIX,kuwo.cn
+DOMAIN-SUFFIX,migu.cn
+
+# ---------- 生活 / 出行 ----------
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,dianping.com
+DOMAIN-SUFFIX,ele.me
+DOMAIN-SUFFIX,eleme.cn
+DOMAIN-SUFFIX,didiglobal.com
+DOMAIN-SUFFIX,didichuxing.com
+DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,12306.cn
+DOMAIN-SUFFIX,ctrip.com
+DOMAIN-SUFFIX,qunar.com
+DOMAIN-SUFFIX,ly.com
+DOMAIN-SUFFIX,sf-express.com
+
+# ---------- 手机厂商 / 系统服务（推送、云空间、应用商店）----------
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,miui.com
+DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,huawei.com
+DOMAIN-SUFFIX,hicloud.com
+DOMAIN-SUFFIX,huaweicloud.com
+DOMAIN-SUFFIX,dbankcloud.cn
+DOMAIN-SUFFIX,oppo.com
+DOMAIN-SUFFIX,oppomobile.com
+DOMAIN-SUFFIX,vivo.com
+DOMAIN-SUFFIX,honor.com
+DOMAIN-SUFFIX,meizu.com
+
+# ---------- 基础服务 / 云 / 办公 ----------
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,baidupcs.com
+DOMAIN-SUFFIX,wps.cn
+DOMAIN-SUFFIX,kingsoft.com
+DOMAIN-SUFFIX,aliyuncs.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,gov.cn

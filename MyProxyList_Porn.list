@@ -1,7 +1,8 @@
 #成人网站相关
-DOMAIN-KEYWORD,javdb
-DOMAIN-KEYWORD,btsow
-DOMAIN-KEYWORD,avsox
+DOMAIN-SUFFIX,javdb.com
+DOMAIN-REGEX,(^|\.)javdb[a-z0-9-]*\.
+DOMAIN-REGEX,(^|\.)btsow[a-z0-9-]*\.
+DOMAIN-REGEX,(^|\.)avsox[a-z0-9-]*\.
 DOMAIN-SUFFIX,jdbstatic.com
 DOMAIN-SUFFIX,2048.cc
 DOMAIN-SUFFIX,iqq2.xyz

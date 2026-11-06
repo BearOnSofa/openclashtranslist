@@ -106,3 +106,36 @@ DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
+
+# ---------- 原 AI.list 三个关键词的等价展开（去掉 KEYWORD，改用锚定正则 + 精确域名）----------
+# 说明：DOMAIN-KEYWORD,openai 会命中 myopenai-clone.com 这类无关域名；
+#      下面 (^|\.)openai 只匹配"以 openai 开头的整段标签"，既能覆盖新出现的
+#      openaiXXX.com，又不会误伤 xxxopenai.com。
+DOMAIN-REGEX,(^|\.)openai[a-z0-9-]*\.
+DOMAIN-REGEX,(^|\.)anthropic[a-z0-9-]*\.
+DOMAIN-REGEX,(^|\.)claude[a-z0-9-]*\.
+
+# OpenAI 挂在共享 CDN 上的资源（azureedge / azurefd / blob / imgix 都是公共域名，
+# 不能用后缀，只能精确到具体主机）
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,openaiassets.blob.core.windows.net
+DOMAIN,openaicom.imgix.net
+
+# Anthropic 同上
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN-SUFFIX,anthropic.team
+
+# Claude 的各个 TLD 与周边站（正则已覆盖，这里显式列出便于阅读和维护）
+DOMAIN-SUFFIX,claude.app
+DOMAIN-SUFFIX,claude.dev
+DOMAIN-SUFFIX,claude.new
+DOMAIN-SUFFIX,claude.site
+DOMAIN-SUFFIX,claudeacademy.com
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN-SUFFIX,claudepages.dev
+DOMAIN-SUFFIX,claudestudio.com
+DOMAIN,chatbotclaude.com

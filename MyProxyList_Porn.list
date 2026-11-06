@@ -1,4 +1,4 @@
-;成人网站相关
+#成人网站相关
 DOMAIN-KEYWORD,javdb
 DOMAIN-KEYWORD,btsow
 DOMAIN-KEYWORD,avsox
@@ -12,5 +12,5 @@ DOMAIN-SUFFIX,fc2.com
 DOMAIN-SUFFIX,alicesw.org
 DOMAIN-SUFFIX,missav.ai
 
-;图床
+#图床
 DOMAIN-SUFFIX,chunwood.com

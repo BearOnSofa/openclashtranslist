@@ -1,0 +1,108 @@
+# ============================================================
+# MyProxyList_AI.list —— 主流 AI 平台代理列表
+# 格式：Clash classical（每行 TYPE,payload）
+# 接入：rule-provider  behavior=classical  format=text
+#
+# 注意 1：注释一律用 # ，不要像 MyDirectList.list 那样用 ; 开头，
+#          ; 开头的行会被内核当成规则去解析，日志里报 warning（不致命但脏）
+# 注意 2：本文件修正了原 AI.list 的一个笔误：
+#          DOMAIN-SUFFIX,claude.ai.com  ← 这个域名不存在（DNS 无解析），
+#          正确的是 claude.ai，即下面这行。原来那条等于 Claude 网页端从未被代理。
+# ============================================================
+
+# ---------- OpenAI / ChatGPT ----------
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,openai.azure.com
+
+# ---------- Anthropic / Claude ----------
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claudeusercontent.com
+
+# ---------- Google Gemini ----------
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,aiplatform.googleapis.com
+
+# ---------- xAI / Grok ----------
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+
+# ---------- Microsoft / GitHub Copilot ----------
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,copilot-proxy.githubusercontent.com
+
+# ---------- Meta ----------
+DOMAIN-SUFFIX,meta.ai
+
+# ---------- Perplexity ----------
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,pplx.ai
+
+# ---------- API 聚合 / 推理平台 ----------
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,together.ai
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,replicate.delivery
+DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,cohere.ai
+DOMAIN-SUFFIX,mistral.ai
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,deepinfra.com
+DOMAIN-SUFFIX,fireworks.ai
+DOMAIN-SUFFIX,bedrock.amazonaws.com
+
+# ---------- 生图 / 生视频 / 语音 ----------
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,leonardo.ai
+DOMAIN-SUFFIX,ideogram.ai
+DOMAIN-SUFFIX,civitai.com
+DOMAIN-SUFFIX,runwayml.com
+DOMAIN-SUFFIX,lumalabs.ai
+DOMAIN-SUFFIX,stability.ai
+DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN-SUFFIX,suno.com
+DOMAIN-SUFFIX,suno.ai
+DOMAIN-SUFFIX,udio.com
+DOMAIN-SUFFIX,heygen.com
+
+# ---------- AI 编程 / 对话客户端 ----------
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,v0.dev
+DOMAIN-SUFFIX,bolt.new
+DOMAIN-SUFFIX,lovable.dev
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,character.ai
+DOMAIN-SUFFIX,phind.com
+DOMAIN-SUFFIX,you.com
+
+# ---------- 登录 / 支付 / 风控依赖（第三方通用服务）----------
+# 这些是 ChatGPT 登录、订阅支付、人机校验的必需依赖，删了会导致登录卡死。
+# 但它们本身是通用服务：被整体代理后，其它用了同一服务的站点也会一起走代理。
+# 如果发现某个非 AI 站点被误代理，把对应行改成 DOMAIN,具体子域 即可。
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,stripe.com
